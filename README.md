@@ -71,3 +71,58 @@ Please choose one (or "q" to quit):
 ### 10. Select iPhone 12 Pro
 
 - In the device toolbar, you will see a dropdown menu labeled **Dimensions Responsive**. Click on this dropdown and choose iPhone 12 Pro from the list of different devices.
+
+---
+
+# Proposed Folder Structure
+
+lib/
+│
+├── main.dart # Entry point of the application
+│
+├── models/ # Data models representing entities
+│ ├── contact.dart # Model class for Contact
+│ ├── group.dart # Model class for Group
+│ └── reminder.dart # Model class for Reminder
+│
+├── views/ # Main UI components and screens
+│ ├── home/ # Folder for home-related screens (including bottom nav bar)
+│ │ ├── home_screen.dart # Main screen with Bottom Navigation Bar
+│ │ ├── bottom_nav_bar.dart # Widget for the Bottom Navigation Bar
+│ │ └── ... # Any additional home-related screens if needed
+│ │
+│ ├── contacts/ # Folder for contact-related screens
+│ │ ├── contact_list_view.dart # Screen to display the list of contacts
+│ │ ├── contact_detail_view.dart # Screen to view a single contact
+│ │ └── edit_contact_view.dart # Screen to edit a contact
+│ │
+│ ├── groups/ # Folder for group-related screens
+│ │ ├── group_list_view.dart # Screen to display the list of groups
+│ │ ├── group_detail_view.dart # Screen to view a single group
+│ │ └── edit_group_view.dart # Screen to edit a group
+│ │
+│ └── reminders/ # Folder for reminder-related screens
+│ ├── reminder_list_view.dart # Screen to display the list of reminders
+│ └── edit_reminder_view.dart # Screen to edit a reminder (if applicable)
+│
+├── viewmodels/ # ViewModels for managing UI logic
+│ ├── contact_view_model.dart # ViewModel for contacts
+│ ├── group_view_model.dart # ViewModel for groups
+│ ├── reminder_view_model.dart # ViewModel for reminders (if applicable)
+│ └── home_view_model.dart # ViewModel for managing home screen logic (if needed)
+│
+├── services/ # Services for data handling and business logic
+│ ├── contact_service.dart # Service for fetching and updating contacts
+│ ├── group_service.dart # Service for managing groups
+│ └── reminder_service.dart # Service for managing reminders (if applicable)
+│
+├── widgets/ # Reusable widgets across the app
+│ ├── contact_tile.dart # Widget for displaying individual contact in the list
+│ ├── group_tile.dart # Widget for displaying individual group in the list
+│ └── reminder_tile.dart # Widget for displaying individual reminder in the list (if applicable)
+│
+├── utils/ # Utility functions and constants
+│ └── constants.dart # Constants used throughout the app
+│
+└── assets/ # Static files like images or fonts (if needed)
+└── images/
