@@ -1,4 +1,5 @@
 {
-	"cmake.sourceDirectory": "/Users/raysandhu/Desktop/Code/friendlyreminder/linux",
-	"java.configuration.updateBuildConfiguration": "interactive"
+  "cmake.sourceDirectory": "/Users/raysandhu/Desktop/Code/friendlyreminder/linux",
+  "java.configuration.updateBuildConfiguration": "interactive",
+  "cSpell.words": ["friendlyreminder"]
 }
