@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:friendlyreminder/screens/home/home_screen.dart';
 
 void main() {
   runApp(
@@ -70,7 +71,10 @@ class MyApp extends StatelessWidget {
         colorScheme: colorScheme,
         useMaterial3: true,
       ),
-      home: const NavigationBarApp(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+      },
     );
   }
 }
