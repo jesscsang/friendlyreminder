@@ -9,7 +9,7 @@
 
 - Download and install flutter from https://docs.flutter.dev/get-started/install
 
-### 2. Add FLutter to `PATH`
+### 2. Add Flutter to `PATH`
 
 - Locate the `flutter/bin` directory and it to the `PATH` environment variable.
 
